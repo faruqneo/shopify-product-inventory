@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>{{title}}</title>
+</head>
+<body>
+    {{inventoryItem.cost}}
+<form action="">
+  <div class="form-group">
+    <label for="id">id:</label>
+    <input type="text" class="form-control" name="id" value="{{inventoryItem.id}}" readonly>
+  </div>
+  <div class="form-group">
+    <label for="cost">cost:</label>
+    <input type="number" class="form-control" name="cost" value={{inventoryItem.cost}} readonly>
+  </div>
+    <div class="form-group">
+    <label for="sku">sku:</label>
+    <input type="text" class="form-control" name="sku" value={{inventoryItem.sku}} readonly>
+  </div>
+    <div class="form-group">
+    <label for="tracked">tracked:</label>
+    <input type="text" class="form-control" name="tracked" value={{inventoryItem.tracked}} readonly>
+  </div>
+    <div class="form-group">
+    <label for="admin_graphql_api_id">admin_graphql_api_id:</label>
+    <input type="text" class="form-control" name="admin_graphql_api_id" value={{inventoryItem.admin_graphql_api_id}} readonly>
+  </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+</head>
+<body>
+    {{#each product}}
+        <h1>{{title}}</h1>
+        <h5>vendor: <em>{{vendor}}</em></h5>
+        <p>product type: <em>{{product_type}}</em></p>
+        <p>inventory_item_id:<em>{{inventory_item_id}}</em></p>
+        <br><br>
+        <a href="/shopify_product/detail/{{id}}"><button type="button" class="btn btn-default">details</button></a>
+    {{/each}}
+</body>
+</html>
