@@ -83,11 +83,11 @@ app.get('/shopify_product/detail/:id',function(req, res){
 app.get('/product/inventory_item_id/details/:id',function(req, res){
     shopify.inventoryItem.get(req.params.id)
     .then(inventoryItem =>
-        //res.send(inventoryItem)
-        res.render('inventory',{
-            title: "inventory view",
-            inventoryItem: inventoryItem
-        })
+        res.send(inventoryItem)
+        // res.render('inventory',{
+        //     title: "inventory view",
+        //     inventoryItem: inventoryItem
+        // })
         )
     .catch(err => console.error(err));
 });
